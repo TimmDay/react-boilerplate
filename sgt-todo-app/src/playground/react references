@@ -1,0 +1,13 @@
+
+DOCS
+https://reactjs.org/docs
+
+
+differences in html and react attributes:
+https://reactjs.org/docs/dom-elements.html
+- className
+- react camelCases alot of stuff
+
+
+event names
+https://reactjs.org/docs/events.html
