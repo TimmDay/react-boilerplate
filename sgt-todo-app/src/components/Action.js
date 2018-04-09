@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 // only enable if options array is !empty
@@ -8,9 +7,11 @@ const Action = (props) => {
             <button
                 onClick={props.handlePickRandom}
                 disabled={!props.hasOptions}
-            >Do this one</button>
+            >
+                Do this one
+            </button>
         </div>
     );
 };
 
-export { Action as default };
+export default Action;

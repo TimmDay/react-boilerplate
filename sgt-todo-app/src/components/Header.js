@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const Header = (props) => {
     return (
         <div>
@@ -9,8 +8,9 @@ const Header = (props) => {
         </div>
     );
 };
+
 Header.defaultProps = {
-    title: 'Sergeant Todooo'
+    title: 'SGT Todo'
 };
 
-export {Header as default};
+export default Header;

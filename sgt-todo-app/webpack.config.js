@@ -1,12 +1,4 @@
-// where is entry point?
-// where to output file bundle file
-
 const path = require('path'); //to get access to path.join()
-
-console.log(path.join(__dirname,'public'));
-// node webpack.config.js
-
-
 
 module.exports = {
     entry: './src/app.js',
@@ -20,5 +12,9 @@ module.exports = {
             test: /\.jsx?$/,
             exclude: /node_modules/
         }]
+    },
+    devtool: 'cheap-module-eval-source-map',
+    devServer: {
+        contentBase: path.join(__dirname, 'public')
     }
 };

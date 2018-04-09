@@ -1,25 +1,28 @@
 {
-  "name": "indecision-app",
+  "name": "sgt-todo-app",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Tim Day",
   "license": "MIT",
   "scripts": {
     "serve": "live-server public/",
-    "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
-    "build": "webpack --watch"
+    "build": "webpack",
+    "dev-server": "webpack-dev-server",
+    "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1",
     "live-server": "^1.2.0",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "validator": "^9.4.1",
-    "webpack": "^4.4.1"
+    "webpack": "^4.5.0",
+    "webpack-dev-server": "^3.1.3"
   },
   "devDependencies": {
     "webpack-cli": "^2.0.13"
