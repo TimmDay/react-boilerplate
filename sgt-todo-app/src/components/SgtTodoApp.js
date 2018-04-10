@@ -4,13 +4,15 @@ import AddOption from './AddOption.js';
 import Action from './Action.js';
 import Header from './Header.js';
 import Options from './Options.js';
+import OptionModal from './OptionModal.js'
 
 
 export default class SgtTodoApp extends React.Component {
     // we use the constructor to manage the default state and bindings.
     // we pass props to be able to use it in the constructor, but mostly because the react docs recommend it (future compatibility?)
     state = {
-        options: []
+        options: [],
+        selectedOption: undefined
     };
 
     handleDeleteOptions = () => {
@@ -24,8 +26,11 @@ export default class SgtTodoApp extends React.Component {
     };
 
     handlePickRandom = () => {
+        const random = Math.floor(Math.random() * this.state.options.length);
         const o = this.state.options;
-        alert(o[Math.floor(Math.random()* o.length)]);
+        this.setState(() => ({
+            selectedOption: o[random]
+        }));
     };
 
     handleAddOption = (option) => {
@@ -40,6 +45,12 @@ export default class SgtTodoApp extends React.Component {
         // doesn't explicitly return anything if it works, just updates the state
         this.setState((prevState) => ({
             options: prevState.options.concat(option)
+        }));
+    };
+
+    handleClearSelectedOption = () => {
+        this.setState(() => ({
+            selectedOption: undefined
         }));
     };
 
@@ -87,6 +98,10 @@ export default class SgtTodoApp extends React.Component {
                 />
                 <AddOption
                     handleAddOption={this.handleAddOption}
+                />
+                <OptionModal
+                    selectedOption={ this.state.selectedOption}
+                    handleClearSelectedOption={this.handleClearSelectedOption}
                 />
             </div>
         );
