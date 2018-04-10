@@ -1,0 +1,40 @@
+
+
+// Big Button
+
+.big-button {
+  background: $grey;
+  border: none;
+  border-bottom: .6rem solid darken($grey, 20%);
+  border-radius: 10px;
+  color: $gold;
+  font-size: $l-size;
+  //font-weight: bold;
+  margin-top: $m-size;
+  padding: $m-size;
+  margin-bottom: $m-size;
+}
+
+.big-button:disabled {
+  opacity: 0.5;
+  border-bottom: none;
+}
+
+
+// Reg Button
+.reg-button {
+  background: $gold;
+  border: none;
+  border-bottom: .3rem solid darken($gold, 15%);
+  //border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  padding: $s-size;
+}
+
+.reg-button--link {
+  background: none;
+  border: none;
+  color: $red;
+  padding: 0;
+}

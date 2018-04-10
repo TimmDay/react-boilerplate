@@ -1,17 +1,7 @@
-
+@import './base/settings';
 @import './base/base';
+
+@import './components/button';
+@import './components/container';
 @import './components/header';
-
-
-
-
-
-
-
-//when importing a partial, leave off the _ and the extensions
-
-//$brand-color: green;
-//
-//* {
-//    color: $brand-color;
-//}
+@import './components/options';

@@ -4,10 +4,11 @@ import React from 'react';
 const Action = (props) => (
     <div>
         <button
+            className="big-button"
             onClick={props.handlePickRandom}
             disabled={!props.hasOptions}
         >
-            Do this one
+            do this one
         </button>
     </div>
 );

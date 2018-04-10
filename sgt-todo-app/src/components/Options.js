@@ -3,8 +3,10 @@ import Option from './Option.js';
 
 //when options empty, render a little <p>
 const Options = (props) => (
-    <div>
-        <button onClick={props.handleDeleteOptions}>Remove All</button>
+    <div className="options">
+        <button
+            className= "reg-button reg-button--link"
+            onClick={props.handleDeleteOptions}>Remove All</button>
 
         {props.options.length === 0 && (<p> Tasks don't do themselves</p>)}
         {

@@ -1,27 +1,25 @@
-$red: #A71D36;
-$gold: #B4A16C;
-$grey: #32414A;
 
 header {
   background: $red;
   color: $gold;
-  margin-bottom: 4.8rem;
-  padding: 1.6rem 5.0rem;
+  padding: $m-size $xl-size;
   text-align: center;
+  margin-bottom: $l-size; //todo why no work?
 }
 
 // BEM - block element modifier
 //.block__element-modifier
 
 .header__title {
-  font-size: 3.2rem;
-  margin: 0;
   color: white;
+  font-size: $l-size;
+  margin: 0;
+  padding-top: $m-size;
 }
 
 .header__subtitle {
-  font-size: 1.6rem;
+  font-size: $m-size;
   font-weight: 500;
   margin: 0;
-
+  padding-bottom: $m-size;
 }
