@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c9e6128-7cce-4e82-85b6-66ef6f6538b9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/sgt-todo-app/src/styles/base/_settings.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sgt-todo-app/src/styles/components/_button.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sgt-todo-app/src/styles/components/_container.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sgt-todo-app/src/styles/components/_options.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sgt-todo-app/src/styles/components/_widget.scss" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/sgt-todo-app/src/components/Action.js" afterPath="$PROJECT_DIR$/sgt-todo-app/src/components/Action.js" />
-      <change beforePath="$PROJECT_DIR$/sgt-todo-app/src/components/AddOption.js" afterPath="$PROJECT_DIR$/sgt-todo-app/src/components/AddOption.js" />
       <change beforePath="$PROJECT_DIR$/sgt-todo-app/src/components/Header.js" afterPath="$PROJECT_DIR$/sgt-todo-app/src/components/Header.js" />
-      <change beforePath="$PROJECT_DIR$/sgt-todo-app/src/components/Option.js" afterPath="$PROJECT_DIR$/sgt-todo-app/src/components/Option.js" />
       <change beforePath="$PROJECT_DIR$/sgt-todo-app/src/components/Options.js" afterPath="$PROJECT_DIR$/sgt-todo-app/src/components/Options.js" />
-      <change beforePath="$PROJECT_DIR$/sgt-todo-app/src/components/SgtTodoApp.js" afterPath="$PROJECT_DIR$/sgt-todo-app/src/components/SgtTodoApp.js" />
-      <change beforePath="$PROJECT_DIR$/sgt-todo-app/src/styles/base/_base.scss" afterPath="$PROJECT_DIR$/sgt-todo-app/src/styles/base/_base.scss" />
+      <change beforePath="$PROJECT_DIR$/sgt-todo-app/src/styles/components/_button.scss" afterPath="$PROJECT_DIR$/sgt-todo-app/src/styles/components/_button.scss" />
       <change beforePath="$PROJECT_DIR$/sgt-todo-app/src/styles/components/_header.scss" afterPath="$PROJECT_DIR$/sgt-todo-app/src/styles/components/_header.scss" />
       <change beforePath="$PROJECT_DIR$/sgt-todo-app/src/styles/styles.scss" afterPath="$PROJECT_DIR$/sgt-todo-app/src/styles/styles.scss" />
     </list>
@@ -32,92 +25,8 @@
       <file leaf-file-name="_settings.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/styles/base/_settings.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_container.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/styles/components/_container.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="12" lean-forward="true" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Option.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/components/Option.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SgtTodoApp.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/components/SgtTodoApp.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
-              <folding>
-                <element signature="e#589#644#0" expanded="false" />
-                <element signature="e#1782#2217#0" expanded="false" />
-                <element signature="e#2531#2583#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddOption.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/components/AddOption.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_header.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/styles/components/_header.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="45" lean-forward="false" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_button.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/styles/components/_button.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Options.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/components/Options.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_base.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/styles/base/_base.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="39" lean-forward="false" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+            <state relative-caret-position="60">
+              <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -127,7 +36,57 @@
         <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/styles/styles.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_widget.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/styles/components/_widget.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Options.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/components/Options.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_options.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/styles/components/_options.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Header.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/components/Header.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_button.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/styles/components/_button.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -157,19 +116,20 @@
         <option value="$PROJECT_DIR$/sgt-todo-app/README.md" />
         <option value="$PROJECT_DIR$/sgt-todo-app/webpack.config.js" />
         <option value="$PROJECT_DIR$/sgt-todo-app/src/app.js" />
-        <option value="$PROJECT_DIR$/sgt-todo-app/src/components/Header.js" />
         <option value="$PROJECT_DIR$/sgt-todo-app/src/components/SgtTodoApp.js" />
         <option value="$PROJECT_DIR$/sgt-todo-app/src/styles/components/_container.scss" />
         <option value="$PROJECT_DIR$/sgt-todo-app/src/components/Action.js" />
-        <option value="$PROJECT_DIR$/sgt-todo-app/src/styles/components/_header.scss" />
         <option value="$PROJECT_DIR$/sgt-todo-app/src/styles/components/_options.scss" />
-        <option value="$PROJECT_DIR$/sgt-todo-app/src/styles/base/_settings.scss" />
         <option value="$PROJECT_DIR$/sgt-todo-app/src/components/AddOption.js" />
-        <option value="$PROJECT_DIR$/sgt-todo-app/src/styles/styles.scss" />
-        <option value="$PROJECT_DIR$/sgt-todo-app/src/styles/components/_button.scss" />
-        <option value="$PROJECT_DIR$/sgt-todo-app/src/components/Options.js" />
         <option value="$PROJECT_DIR$/sgt-todo-app/src/components/Option.js" />
         <option value="$PROJECT_DIR$/sgt-todo-app/src/styles/base/_base.scss" />
+        <option value="$PROJECT_DIR$/sgt-todo-app/src/styles/styles.scss" />
+        <option value="$PROJECT_DIR$/sgt-todo-app/src/styles/base/_settings.scss" />
+        <option value="$PROJECT_DIR$/sgt-todo-app/src/styles/components/_widget.scss" />
+        <option value="$PROJECT_DIR$/sgt-todo-app/src/components/Options.js" />
+        <option value="$PROJECT_DIR$/sgt-todo-app/src/components/Header.js" />
+        <option value="$PROJECT_DIR$/sgt-todo-app/src/styles/components/_header.scss" />
+        <option value="$PROJECT_DIR$/sgt-todo-app/src/styles/components/_button.scss" />
       </list>
     </option>
   </component>
@@ -285,12 +245,12 @@
       <option name="presentableId" value="Default" />
       <updated>1523347846552</updated>
       <workItem from="1523347848106" duration="192000" />
-      <workItem from="1523348308954" duration="13723000" />
+      <workItem from="1523348308954" duration="15065000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13915000" />
+    <option name="totallyTimeSpent" value="15257000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="-676" width="1256" height="1129" extended-state="0" />
@@ -416,26 +376,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/components/Header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="82" lean-forward="true" selection-start-line="5" selection-start-column="82" selection-end-line="5" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/components/SgtTodoApp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
-          <folding>
-            <element signature="e#589#644#0" expanded="false" />
-            <element signature="e#1782#2217#0" expanded="false" />
-            <element signature="e#2531#2583#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/components/Action.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -444,50 +384,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/styles/base/_settings.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/styles/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/styles/components/_options.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/styles/components/_header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="45" lean-forward="false" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/components/AddOption.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/components/Options.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -508,18 +408,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/components/SgtTodoApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+          <folding>
+            <element signature="e#589#644#0" expanded="false" />
+            <element signature="e#1782#2217#0" expanded="false" />
+            <element signature="e#2531#2583#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/styles/components/_container.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="true" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+        <state relative-caret-position="75">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/styles/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/styles/base/_settings.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/styles/components/_options.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/styles/components/_widget.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/components/Options.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/styles/components/_header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/components/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sgt-todo-app/src/styles/components/_button.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="17" />
+        <state relative-caret-position="270">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding />
         </state>
       </provider>
