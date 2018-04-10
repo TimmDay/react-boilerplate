@@ -1,0 +1,27 @@
+$red: #A71D36;
+$gold: #B4A16C;
+$grey: #32414A;
+
+header {
+  background: $red;
+  color: $gold;
+  margin-bottom: 4.8rem;
+  padding: 1.6rem 5.0rem;
+  text-align: center;
+}
+
+// BEM - block element modifier
+//.block__element-modifier
+
+.header__title {
+  font-size: 3.2rem;
+  margin: 0;
+  color: white;
+}
+
+.header__subtitle {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0;
+
+}
