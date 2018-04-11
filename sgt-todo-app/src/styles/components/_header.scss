@@ -1,5 +1,5 @@
 
-header {
+.header {
   background: $red;
   color: $gold;
   padding: $m-size $xl-size;
@@ -8,7 +8,7 @@ header {
 }
 
 // BEM - block element modifier
-//.block__element-modifier
+//.block__element--modifier
 
 .header__title {
   color: white;
