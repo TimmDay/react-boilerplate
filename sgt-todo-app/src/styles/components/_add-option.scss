@@ -9,6 +9,7 @@
 .add-option {
   display: flex;
   padding: $m-size;
+  flex-direction: column;
 }
 
 
@@ -18,9 +19,21 @@
   border-bottom: 0.3rem solid lighten($grey, 30%);
   color: $grey;
   flex-grow: 1; //grow to take upt the available space
-  margin-right: $s-size;
+  //margin-right: $s-size;
+  margin: 0 0 $s-size 0;
   padding: $s-size;
 }
 .add-option__input:focus {
   outline: 0;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .add-option {
+    flex-direction: row;
+  }
+
+  .add-option__input {
+    margin: 0 $s-size 0 0;
+  }
+
 }

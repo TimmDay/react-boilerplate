@@ -23,3 +23,11 @@
   margin: 0;
   padding-bottom: $m-size;
 }
+
+@media (min-width: $desktop-breakpoint) {
+
+  .header {
+    margin-bottom: $l-size;
+  }
+
+}
