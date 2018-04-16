@@ -1,13 +1,29 @@
+//widget
+.widget {
+  background: $light-gold;
+  margin-bottom: $xl-size;
+}
+
 
 // widget header
 .widget-header {
-  background: lighten($grey, 65%);
-  padding: $m-size;
+  background: $gold;
+  color: $red;
+  padding: $m-size $l-size;
 
   display: flex;
   justify-content: space-between;
+  //vs space-around
 }
 
 .widget-header__title {
   margin: 0;
+  color: #FFF;
+  letter-spacing: .3rem;
+}
+
+.widget__message {
+  border-bottom: 1px solid $light-grey;
+  margin: 0;
+  padding: $l-size;
 }

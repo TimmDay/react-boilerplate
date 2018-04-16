@@ -1,0 +1,26 @@
+// add option error
+.add-option-error{
+  color: $red;
+  font-style: italic;
+  padding: 0 $m-size;
+  margin: $m-size 0 0 0;
+}
+
+.add-option {
+  display: flex;
+  padding: $m-size;
+}
+
+
+.add-option__input {
+  background: $light-grey;
+  border: none;
+  border-bottom: 0.3rem solid lighten($grey, 30%);
+  color: $grey;
+  flex-grow: 1; //grow to take upt the available space
+  margin-right: $s-size;
+  padding: $s-size;
+}
+.add-option__input:focus {
+  outline: 0;
+}

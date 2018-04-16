@@ -8,7 +8,7 @@ const Action = (props) => (
             onClick={props.handlePickRandom}
             disabled={!props.hasOptions}
         >
-            do this one
+            orders?
         </button>
     </div>
 );
