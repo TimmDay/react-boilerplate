@@ -1,3 +1,9 @@
-sgt-todo-app/node_modules
 .idea
+sgt-todo-app/node_modules
 sgt-todo-app/.idea
+
+boilerplate-v1/node_modules
+boilerplate-v1/.idea
+
+expenses-app/node_modules
+expenses-app/.idea
