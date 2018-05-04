@@ -33,14 +33,32 @@ console.log('destructuring');
 
 
 
-const book = {
-    title: 'Shantarm',
-    author: 'Gregory David Roberts',
-    publisher: {
-        name: 'St Martins Griffen'
-    }
-};
+// const book = {
+//     title: 'Shantarm',
+//     author: 'Gregory David Roberts',
+//     publisher: {
+//         name: 'St Martins Griffen'
+//     },
+//     nest1: {
+//         nest2 : {
+//             nest3: {
+//                 nest4: "inception!"
+//             }
+//         }
+//     }
+// };
+//
+// const {name: publisherName = 'self published'} = book.publisher;
+// const { nest4 = 'empty'} = book.nest1.nest2.nest3;
+// console.log(publisherName, nest4);
 
-const {name: publisherName = 'self published'} = book.publisher;
+// array destructuring - allows us to pull items off an array. matches up by position rather than name
 
-console.log(publisherName);
+const address = ['10', 'Weasel Drive', 'Ohio', '14235' ];
+// const address = [];
+const [, city, state = 'New York'] = address;
+console.log(`You are in ${state}`);
+
+const item = ['coffee (hot)', '$2', '$2.50', '$2.75'];
+const [thing,,medium] = item;
+console.log(`a medium ${thing} costs ${medium}`);
