@@ -5,11 +5,9 @@
 .ReactModalPortal .ReactModal__Overlay {
   transition: opacity 200ms ease-in-out;
 
-
   display: flex; //enable flexbox
   justify-content: center; //horizontal alignment
   align-items: center; // vertical alignment
-
 }
 
 .ReactModalPortal .ReactModal__Overlay--after-open {

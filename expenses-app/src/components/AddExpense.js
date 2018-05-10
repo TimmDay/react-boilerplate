@@ -1,9 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ExpenseForm from './ExpenseForm';
 
 const AddExpense = () => (
     <div>
-        <p>added expenses </p>
+        <h1>add expense</h1>
+
+        <ExpenseForm/>
+
         <Link to="/">back</Link>
     </div>
 );

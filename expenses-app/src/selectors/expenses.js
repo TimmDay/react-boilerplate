@@ -1,5 +1,6 @@
 // GET visibile expenses
 //combine info from the two stores to display only filtered data
+
 const getVisibleExpenses = (expenses, {text, sortBy, startDate, endDate }) => {
 
     return expenses.filter((expense) => {
