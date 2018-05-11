@@ -1,4 +1,9 @@
 import React from 'react';
+import moment from 'moment';
+import { SingleDatePicker } from 'react-dates'; // requires moment
+import 'react-dates/lib/css/_datepicker.css'; //css for the date picker
+
+
 
 // this one is reusable.
 // for use in AddExpense and EditExpense
@@ -23,8 +28,13 @@ export default class ExpenseForm extends React.Component {
     state = {
         description: '',
         note: '',
-        amount: ''
+        amount: '',
+        createdAt: moment(), // current time
+        calendarFocused: false,
+        error: ''
     };
+
+
 
     onDescriptionChange = (e) => {
         const description = e.target.value;
@@ -37,17 +47,42 @@ export default class ExpenseForm extends React.Component {
     onAmountChange = (e) => {
         const amount = e.target.value;
 
-        if (amount.match(/^\d*(\.\d{0,2})?$/)) {
+        if (!amount || amount.match(/^\d{1,}(\.\d{0,2})?$/)) {
             this.setState(() => ({ amount: amount }));
         }
+    };
 
+
+    onDateChange = (createdAt) => {
+        if (createdAt) { //prevents user clearing the value
+            //because if date is cleared, this func gets called with nothing
+            // (we don't want to update this part of state to nothing)
+            this.setState(() => ({ createdAt: createdAt }));
+        }
+    };
+    onFocusChange = ({ focused }) => {
+        this.setState(()=> ({ calendarFocused: focused }));
+    };
+    onSubmit = (e) => {
+        e.preventDefault(); //otherwise browser does full page refresh
+
+        if (!this.state.description || !this.state.amount) {
+            // set error state equal 'please provide description and amount'
+            this.setState(() => ({error: 'please provide description and amount'}))
+        } else {
+            // clear error
+            console.log('submitted');
+        }
     };
 
 
     render() {
         return (
             <div>
-                <form>
+                {this.state.error && <p>{this.state.error}</p>}
+                <form
+                    onSubmit={this.onSubmit}
+                >
                     <input
                         type="text"
                         placeholder="Description"
@@ -61,6 +96,15 @@ export default class ExpenseForm extends React.Component {
                         placeholder="Amount"
                         value={this.state.amount}
                         onChange={this.onAmountChange}
+                    />
+
+                    <SingleDatePicker
+                        date={this.state.createdAt}
+                        onDateChange={this.onDateChange}
+                        focused={this.state.calendarFocused}
+                        onFocusChange={this.onFocusChange}
+                        numberOfMonths={1}
+                        isOutsideRange={() => false} //every day available, past and future
                     />
 
                     <textarea
