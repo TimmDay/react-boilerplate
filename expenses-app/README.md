@@ -48,3 +48,7 @@ style-loader
 normalize
 to use, just import it to app.js, above the import for the styles.scss
 import 'normalize.css/normalize.css';
+
+
+moment.js - used in
+react-dates (airbnb) - used in

@@ -24,16 +24,18 @@ export default class ExpenseForm extends React.Component {
     // conditional logic in oncChnage handler
 
 
-    // local component state
-    state = {
-        description: '',
-        note: '',
-        amount: '',
-        createdAt: moment(), // current time
-        calendarFocused: false,
-        error: ''
-    };
-
+    constructor(props) {
+        super(props);
+        // local component state
+        this.state = {
+            description: props.existingExpense ? props.existingExpense.description : '',
+            note: props.existingExpense ? props.existingExpense.note : '',
+            amount: props.existingExpense ? (props.existingExpense.amount / 100).toString() : '',
+            createdAt: props.existingExpense ? moment(props.existingExpense.createdAt) : moment(), // current time
+            calendarFocused: false,
+            error: ''
+        };
+    }
 
 
     onDescriptionChange = (e) => {
@@ -55,7 +57,7 @@ export default class ExpenseForm extends React.Component {
 
     onDateChange = (createdAt) => {
         if (createdAt) { //prevents user clearing the value
-            //because if date is cleared, this func gets called with nothing
+            // because if date is cleared, this func gets called with nothing
             // (we don't want to update this part of state to nothing)
             this.setState(() => ({ createdAt: createdAt }));
         }
@@ -63,6 +65,7 @@ export default class ExpenseForm extends React.Component {
     onFocusChange = ({ focused }) => {
         this.setState(()=> ({ calendarFocused: focused }));
     };
+
     onSubmit = (e) => {
         e.preventDefault(); //otherwise browser does full page refresh
 
@@ -70,8 +73,16 @@ export default class ExpenseForm extends React.Component {
             // set error state equal 'please provide description and amount'
             this.setState(() => ({error: 'please provide description and amount'}))
         } else {
-            // clear error
-            console.log('submitted');
+            this.setState(() => ({error: ''}));
+            // the dispatch to store func, added as prop in AddExpense when form instantiated
+            // * 100 to cents
+            // javascript works in ms
+            this.props.onSubmit({
+                description: this.state.description,
+                amount: parseFloat(this.state.amount, 10) * 100,
+                createdAt: this.state.createdAt.valueOf(),
+                note: this.state.note
+            });
         }
     };
 
