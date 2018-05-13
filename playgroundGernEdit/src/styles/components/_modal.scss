@@ -1,0 +1,81 @@
+.ReactModalPortal > div {
+  opacity: 0; //invisible on click, then transition to visible
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+  transition: opacity 200ms ease-in-out;
+
+  display: flex; //enable flexbox
+  justify-content: center; //horizontal alignment
+  align-items: center; // vertical alignment
+
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.modal {
+  background: $light-gold;
+  border: 1px solid $grey;
+  border-radius: 1rem;
+  color: $grey;
+  max-width: 50rem;
+  outline: 0;
+  padding: $l-size;
+  text-align: center;
+}
+
+.modal--gn-stats {
+  background: $light-gold;
+  border: 1px solid $grey;
+  border-radius: 1rem;
+  outline: 0;
+  padding: $l-size;
+}
+
+.modal__title {
+  color: $red;
+  margin: 0;
+}
+.modal__subtitle {
+  color: $red;
+  font-style: italic;
+  margin: 0 0 $m-size 0;
+}
+
+modal__img {
+  max-width: 5rem;
+}
+//.modal__body {
+//  font-size: 2rem;
+//  font-weight: 300;
+//  margin: 0 0 $l-size 0;
+//  word-break: break-all; //breaks up long words
+//}
+
+.modal__table {
+  margin: 0 auto;
+}
+.modal__table--cell-title {
+  text-align: right;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.modal__table--cell-info{
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.modal__btn {
+  color: $red;
+  background-color: $light-grey;
+  border-radius: 5px;
+  padding: $s-size $m-size;
+  margin-top: $l-size;
+}
