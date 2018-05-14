@@ -3,17 +3,9 @@ import ModalAbout from './ModalAbout';
 
 export default class DropdownMenuEditor extends React.Component {
 
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            showMenu: false,
-            isAboutModalOpen: false
-        };
-
-
-
-        // this.showMenu = this.showMenu.bind(this);
+    state = {
+        showMenu: false,
+        isAboutModalOpen: false
     };
 
     // by making an arrow func, we dont seem to need the constructor binding
@@ -51,28 +43,27 @@ export default class DropdownMenuEditor extends React.Component {
     render() {
         return (
             <div>
-                <button
+                <div
+                    className="menu-bar__item"
                     onClick={this.showMenu}
                 >Editor
-                </button>
+                </div>
 
                 {this.state.showMenu
                     ? (
-                    <div className="dropdown">
+                    <ul className="dd-menu">
 
-                        <button
-                            className="big-button"
+                        <li
+                            className="big-butto dd__item"
                             onClick={this.handleToggleAboutModal}
-                        >About GernEdit</button>
+                        >About GernEdit</li>
 
-                        <button
-                            className="big-button"
-                        >View History
-                        </button>
+                        <li className="big-button dd__item">View History
+                        </li>
 
-                        <button>Save and Close</button>
+                        <li className="big-button dd__item" >Save and Close</li>
 
-                    </div>)
+                    </ul>)
                     : (null)
                 }
 

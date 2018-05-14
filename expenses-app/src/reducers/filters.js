@@ -1,9 +1,14 @@
+import moment from 'moment';
+
+
 // Filters Reducer
+// defaulting to show expenses for current month. adjust start and end date with moment
+
 const filtersDefaultState = {
     text: '',
     sortBy: 'date',
-    startDate: undefined,
-    endDate: undefined
+    startDate: moment().startOf('month'),
+    endDate: moment().endOf('month')
 };
 const filtersReducer = (state = filtersDefaultState, action) => {
     switch(action.type) {

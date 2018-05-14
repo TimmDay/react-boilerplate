@@ -1,0 +1,49 @@
+.menu-bar {
+  background-color: $light-gold;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.menu-bar__item {
+  padding: $s-size/2 $s-size;
+}
+.menu-bar__item:hover {
+  background-color: $red;
+  color: $light-gold;
+}
+.menu-bar__item--dbURL {
+  font-style: italic;
+  margin: 0 $xl-size 0 0;
+  padding: $s-size/2 $s-size;
+}
+
+//ul
+.dd-menu {
+  background-color: $light-gold;
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+.dd-germanet {
+  margin-right: auto; //push dbURL to the right
+}
+
+//li
+.dd__item {
+  color: $grey;
+  margin: 0;
+  padding: $s-size;
+}
+.dd__item:hover {
+  background-color: $red;
+  color: $light-gold;
+}
+
+
+
+

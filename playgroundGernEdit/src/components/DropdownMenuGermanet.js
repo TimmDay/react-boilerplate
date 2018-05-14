@@ -3,13 +3,9 @@ import ModalGermanetStatistics from './ModalGermanetStatistics';
 
 export default class DropdownMenuGermanet extends React.Component {
 
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            showMenu: false,
-            isStatsModalOpen: false
-        };
+    state = {
+        showMenu: false,
+        isStatsModalOpen: false
     };
 
     showMenu = (e) => {
@@ -43,49 +39,51 @@ export default class DropdownMenuGermanet extends React.Component {
 
     render() {
         return (
-            <div>
-                <button
+            <div
+            className="dd-germanet">
+                <div
+                    className="menu-bar__item "
                     onClick={this.showMenu}
                 >GermaNet
-                </button>
+                </div>
 
                 {this.state.showMenu
                     ? (
-                        <ul className="dropdown">
+                        <ul className="dd-menu">
 
                             <li
-                                className="big-button"
+                                className="big-button dd__item"
                             >List all Lexical Units</li>
 
                             <li
-                                className="big-button"
+                                className="big-button dd__item"
                             >List all Synsets
                             </li>
 
                             <li
-                                className="big-button"
+                                className="big-button dd__item"
                             >Extract all Verbs
                             </li>
 
                             <li
-                                className="big-button"
+                                className="big-button dd__item"
                             >Extract Verb Valency List
                             </li>
 
                             <li
-                                className="big-button"
+                                className="big-button dd__item"
                             >Extract Synonymy List (XML)
                             </li>
 
                             {/*// a faint line*/}
 
                             <li
-                                className="big-button"
+                                className="big-button dd__item"
                             >Check Coverage
                             </li>
 
                             <li
-                                className="big-button"
+                                className="big-button dd__item"
                                 onClick={this.handleToggleGNStatsModal}
                             >Germanet Statistics
                             </li>
