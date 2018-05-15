@@ -1,14 +1,11 @@
 import { createStore, combineReducers } from 'redux';
-import expensesReducer from '../reducers/expenses';
-import filtersReducer from './../reducers/filters';
+// import reducer(s)
 
 export default () => {
 
     const store = createStore(
-        combineReducers({
-            expenses: expensesReducer,
-            filters: filtersReducer
-        })
+        combineReducers({}),
+        window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
     );
 
     return store;
@@ -16,5 +13,6 @@ export default () => {
 
 // STORE creation
 // tracks the state (the thing returned when an action is processed by the reducer
+// the weird window. line is to enable redux devtools in chrome browser
 
 

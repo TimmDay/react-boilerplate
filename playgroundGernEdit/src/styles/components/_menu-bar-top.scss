@@ -14,6 +14,8 @@
   background-color: $red;
   color: $light-gold;
 }
+
+// the text display of connected db url
 .menu-bar__item--dbURL {
   font-style: italic;
   margin: 0 $xl-size 0 0;
@@ -30,7 +32,7 @@
   position: absolute;
 }
 .dd-germanet {
-  margin-right: auto; //push dbURL to the right
+  margin-right: auto; //push rest of menu ( login, dbURL) to the right
 }
 
 //li

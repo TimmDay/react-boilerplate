@@ -41,7 +41,6 @@ const jsx = (
     <Provider store={store}>
         {/*< AppRouter />*/}
         <GernEditApp/>
-        {/*<DropdownMenuEditor />*/}
     </Provider>
 
 );
