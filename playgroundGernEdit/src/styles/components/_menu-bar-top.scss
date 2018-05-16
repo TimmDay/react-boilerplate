@@ -1,4 +1,5 @@
 .menu-bar {
+  align-items: center; // vertical alignment for menu items
   background-color: $light-gold;
   border-bottom: 1px solid black;
   border-top: 1px solid black;
@@ -18,7 +19,7 @@
 // the text display of connected db url
 .menu-bar__item--dbURL {
   font-style: italic;
-  margin: 0 $xl-size 0 0;
+  margin: 0;// $xl-size 0 0;
   padding: $s-size/2 $s-size;
 }
 
@@ -46,6 +47,18 @@
   color: $light-gold;
 }
 
+//log in btn
+.menu-bar__log-in-btn {
+  background-color: $grey;
+  border-radius: 5px;
+  color: $gold;
+  margin: 0 $xl-size 0 0;
+  padding: $s-size/4 $s-size;
+}
+.menu-bar__log-in-btn:hover {
+  background-color: $red;
+  color: $light-gold;
+}
 
 
 

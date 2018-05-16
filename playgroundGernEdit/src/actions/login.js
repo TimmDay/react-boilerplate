@@ -2,6 +2,16 @@
 
 // Action Generator - log in
 
-export const addLogInConnection = () => ({
-    type: 'LOG_IN'
-});
+export const addLogInDetails = (
+    {
+        userName,
+        password,
+        databaseURL
+    } = {}
+    ) => ({
+        type: 'LOG_IN',
+        userName,
+        password,
+        databaseURL
+    }
+);

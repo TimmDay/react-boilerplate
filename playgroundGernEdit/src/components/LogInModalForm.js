@@ -1,17 +1,18 @@
 import React from 'react';
 import Modal from 'react-modal';
+import { connect } from 'react-redux';
+import { addLogInDetails } from '../actions/login';
 
-export default class ModalLogInForm extends React.Component {
-
+class ModalLogInForm extends React.Component {
 
     constructor(props) {
         super(props);
 
         this.state = {
-            isLogInModalOpen: false,
             userName: '',
             password: '',
             databaseURL: '',
+            isLogInModalOpen: false,
             error: ''
         };
     }
@@ -35,7 +36,6 @@ export default class ModalLogInForm extends React.Component {
     onPasswordChange = (e) => {
         const pword = e.target.value;
 
-        console.log(pword); //todo
         // todo some encrytion or something?
         this.setState(() => ({ password: pword }))
     };
@@ -49,16 +49,18 @@ export default class ModalLogInForm extends React.Component {
     };
 
 
-    onSubmit = (e) => {
+    onSubmit = (e, {userName, password, databaseURL}=this.state) => {
         e.preventDefault();
 
-        if (!this.state.userName || !this.state.password || !this.state.databaseURL) {
+        if (!userName || !password || !databaseURL) {
             this.setState(() => ({error: 'please check your details'}))
-        } else {
-            this.setState(() => ({error: ''}));
 
-            //todo dispatch to store
+        } else {
+            //dispatch to store
+            this.props.dispatch(addLogInDetails({userName, password, databaseURL}));
+            this.setState(() => ({ isLogInModalOpen: false, error: '' }))
         }
+
     };
 
     render() {
@@ -66,8 +68,9 @@ export default class ModalLogInForm extends React.Component {
             <div>
 
                 <button
+                    className="menu-bar__log-in-btn"
                     onClick={this.handleToggleLogInModal}
-                >Click to log in</button>
+                >log in</button>
 
                 <Modal
                     isOpen= {this.state.isLogInModalOpen}
@@ -135,3 +138,5 @@ export default class ModalLogInForm extends React.Component {
         );
     }
 };
+
+export default connect()(ModalLogInForm);

@@ -12,6 +12,7 @@ const EditExpense = (props) => {
             {/* populate fields with existing values */}
             <ExpenseForm
                 existingExpense={props.expense}
+
                 onSubmit={(expense) => {
                     //dispatch the action to edit the expense
                     props.dispatch(editExpense(props.expense.id, expense));
@@ -31,7 +32,7 @@ const EditExpense = (props) => {
 };
 
 
-// give the compoent the current expense object
+// give the component the current expense object as props
 const mapStateToProps = (state, props) => {
     return {
         expense: state.expenses.find((expense) => {

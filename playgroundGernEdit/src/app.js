@@ -2,17 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 
+import GernEditApp from "./components/GernEditApp";
 
 
 import AppRouter from './routers/AppRouter';
-import configureStore from './store/configureStore';
-import { addExpense } from "./actions/expenses";
+
+// import { addExpense } from "./actions/expenses";
 import {setTextFilter, sortByAmount} from "./actions/filters";
 import getVisibleExpenses from './selectors/expenses';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
+import configureStore from './store/configureStore';
 
-import GernEditApp from "./components/GernEditApp";
 import DropdownMenuEditor from './components/DropdownMenuEditor';
 
 const store = configureStore();
@@ -25,19 +26,19 @@ const store = configureStore();
 //     console.log(visibleExpenses);
 // });
 
-store.dispatch(addExpense({description: 'bananas', amount: 200}));
-store.dispatch(addExpense({description: 'water bill', amount: 4000, createdAt: 2525}));
-store.dispatch(addExpense({description: 'rent', amount: 80000}));
-store.dispatch(addExpense({description: 'gas bill', amount: 5000, createdAt: 3000}));
+// store.dispatch(addExpense({description: 'bananas', amount: 200}));
+// store.dispatch(addExpense({description: 'water bill', amount: 4000, createdAt: 2525}));
+// store.dispatch(addExpense({description: 'rent', amount: 80000}));
+// store.dispatch(addExpense({description: 'gas bill', amount: 5000, createdAt: 3000}));
 
-store.dispatch(setTextFilter(''));
+// store.dispatch(setTextFilter(''));
 
 
 console.log(store.getState());
 
+
 // Provider comp requires a prop that references our store that we have set up
 const jsx = (
-
     <Provider store={store}>
         {/*< AppRouter />*/}
         <GernEditApp/>
@@ -46,3 +47,5 @@ const jsx = (
 );
 
 ReactDOM.render(jsx, document.getElementById('app'));
+
+// Provider provides the store to all of the components that use the application

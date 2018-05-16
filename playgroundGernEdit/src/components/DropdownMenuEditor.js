@@ -54,7 +54,7 @@ export default class DropdownMenuEditor extends React.Component {
                     <ul className="dd-menu">
 
                         <li
-                            className="big-butto dd__item"
+                            className="big-button dd__item"
                             onClick={this.handleToggleAboutModal}
                         >About GernEdit</li>
 

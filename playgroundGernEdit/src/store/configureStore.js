@@ -1,13 +1,15 @@
 import { createStore, combineReducers } from 'redux';
-// import reducer(s)
+import loginReducer from '../reducers/login';
+
 
 export default () => {
 
     const store = createStore(
-        combineReducers({}),
+        loginReducer,
+        // combineReducers({loginReducer,...}),
         window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-    );
 
+    );
     return store;
 }
 

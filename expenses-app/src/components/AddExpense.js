@@ -26,7 +26,7 @@ const AddExpense = (props) => (
 
 
 export default connect()(AddExpense);
-// first parenthesis state, 2nd the component
+// first parenthesis for mapping state as props, 2nd the component
 // with connect wired up, we can access props.dispatch
 
 // components rendered inside react router get access to special props -> history.push
