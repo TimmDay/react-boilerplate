@@ -1,6 +1,8 @@
 import React from 'react';
 
 import MenuBarTop from './MenuBarTop';
+import SearchTermInput from './SearchTermInput';
+import SearchHistoryDisplay from './SearchHistoryDisplay';
 
 
 
@@ -18,8 +20,10 @@ export default class GernEditApp extends React.Component {
                 <p> GernEditApp page linked</p>
 
                 < MenuBarTop />
+                < SearchTermInput />
+                < SearchHistoryDisplay />
 
-                <p>test paragraph for layout: stay still on dropdown</p>
+                <p>layout boundary test paragraph</p>
             </div>
 
         )

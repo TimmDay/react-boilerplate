@@ -1,20 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-
-import GernEditApp from "./components/GernEditApp";
-
-
 import AppRouter from './routers/AppRouter';
 
-// import { addExpense } from "./actions/expenses";
-import {setTextFilter, sortByAmount} from "./actions/filters";
-import getVisibleExpenses from './selectors/expenses';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 import configureStore from './store/configureStore';
 
+import GernEditApp from "./components/GernEditApp";
 import DropdownMenuEditor from './components/DropdownMenuEditor';
+import {executeSearchTermInput} from "./actions/searchInput";
 
 const store = configureStore();
 
@@ -26,13 +21,11 @@ const store = configureStore();
 //     console.log(visibleExpenses);
 // });
 
-// store.dispatch(addExpense({description: 'bananas', amount: 200}));
-// store.dispatch(addExpense({description: 'water bill', amount: 4000, createdAt: 2525}));
-// store.dispatch(addExpense({description: 'rent', amount: 80000}));
-// store.dispatch(addExpense({description: 'gas bill', amount: 5000, createdAt: 3000}));
 
-// store.dispatch(setTextFilter(''));
-
+// TEST SET UP STATE dispatch calls
+store.dispatch(executeSearchTermInput({currentSearchTerm: 'Baum', isQueryCaseSensitive: true}));
+store.dispatch(executeSearchTermInput({currentSearchTerm: 'brauchen', isQueryCaseSensitive: false}));
+store.dispatch(executeSearchTermInput({currentSearchTerm: 'Äpfel', isQueryCaseSensitive: false}));
 
 console.log(store.getState());
 

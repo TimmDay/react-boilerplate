@@ -12,7 +12,6 @@ import LogInModalForm from './LogInModalForm';
 //todo add extra prop to store 'isDbConnected' and only render that <p> if that is also true
 
 class MenuBarTop extends React.Component {
-
     constructor(props) {
         super(props);
     }
@@ -20,28 +19,23 @@ class MenuBarTop extends React.Component {
     render() {
         return (
             <div>
-
                 <div className="menu-bar">
 
                     < DropdownMenuEditor/>
                     < DropdownMenuGermanet/>
-
-                    {this.props.databaseConnection && <p className="menu-bar__item--dbURL">connected to: {this.props.databaseConnection}</p> }
-
-
+                    {this.props.databaseConnection &&
+                        <p className="menu-bar__item--dbURL">connected to: {this.props.databaseConnection}</p> }
                     < LogInModalForm/>
 
                 </div>
             </div>
-
         )
     }
-
 }
 
 const mapStateToProps = (state) => {
     return {
-        databaseConnection: state.databaseConnection
+        databaseConnection: state.loginReducer.databaseConnection
     }
 };
 

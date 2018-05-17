@@ -1,12 +1,13 @@
 import { createStore, combineReducers } from 'redux';
-import loginReducer from '../reducers/login';
 
+import loginReducer from '../reducers/login';
+import searchInputReducer from '../reducers/searchInput';
 
 export default () => {
 
     const store = createStore(
-        loginReducer,
-        // combineReducers({loginReducer,...}),
+        // loginReducer,
+        combineReducers({loginReducer, searchInputReducer}),
         window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 
     );

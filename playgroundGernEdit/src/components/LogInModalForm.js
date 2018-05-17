@@ -42,10 +42,8 @@ class ModalLogInForm extends React.Component {
     onDbUrlChange = (e) => {
         const dbUrl = e.target.value;
 
-        //todo do some url validation using that validator library
+        //todo do some url validation using that validator library?
         this.setState(() => ({databaseURL: dbUrl}));
-        // console.log(dbUrl); //todo one behind below. setstate a little slower i guess
-        // console.log(this.state.databaseURL); //todo
     };
 
 
@@ -86,6 +84,20 @@ class ModalLogInForm extends React.Component {
                         className="login-form"
                         onSubmit={this.onSubmit}
                     >
+
+                        <div
+                            className="login-form__item"
+                        >
+                            <label>database URL: </label>
+                            <input
+                                type="text"
+                                placeholder="database URL"
+                                value={this.state.databaseURL}
+                                onChange={this.onDbUrlChange}
+                                autoFocus
+                            />
+                        </div>
+
                         <div
                             className="login-form__item"
                         >
@@ -93,10 +105,8 @@ class ModalLogInForm extends React.Component {
                             <input
                                 type="text"
                                 placeholder="user name"
-                                autoFocus
                                 value={this.state.userName}
                                 onChange={this.onUserNameChange}
-
                             />
                         </div>
 
@@ -109,19 +119,6 @@ class ModalLogInForm extends React.Component {
                                 placeholder="password"
                                 value={this.state.password}
                                 onChange={this.onPasswordChange}
-                            />
-                        </div>
-
-
-                        <div
-                            className="login-form__item"
-                        >
-                            <label>database URL: </label>
-                            <input
-                                type="text"
-                                placeholder="database URL"
-                                value={this.state.databaseURL}
-                                onChange={this.onDbUrlChange}
                             />
                         </div>
 

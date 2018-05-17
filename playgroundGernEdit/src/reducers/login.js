@@ -15,7 +15,7 @@ const logInReducer = (state = logInReducerDefaultState, action) => {
                 username: action.userName,
                 password: action.password,
                 databaseConnection: action.databaseURL
-                // todo?
+                // todo
             };
 
         default:

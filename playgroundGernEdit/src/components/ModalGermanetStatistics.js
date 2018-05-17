@@ -29,7 +29,7 @@ const ModalGermanetStatistics = (props) => (
 
         <button
             className="modal__btn reg-button"
-            onClick={console.log('refresh data by re-querying the database. (do we really need this?)')}
+            // onClick={console.log('refresh data by re-querying the database. (do we really need this?)')}
         >
             refresh
         </button>
