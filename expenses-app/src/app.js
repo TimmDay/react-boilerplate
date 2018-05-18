@@ -37,7 +37,7 @@ store.dispatch(setTextFilter(''));
 
 // store.dispatch(sortByAmount());
 
-console.log(store.getState());
+// console.log(store.getState());
 
 // Provider comp requires a prop that references our store that we have set up
 const jsx = (

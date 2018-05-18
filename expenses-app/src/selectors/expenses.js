@@ -11,7 +11,7 @@ const getVisibleExpenses = (expenses, {text, sortBy, startDate, endDate }) => {
         // const startDateMatch = typeof startDate !== 'number' || expense.createdAt >= startDate;
         // const endDateMatch = typeof endDate !== 'number' || expense.createdAt <= endDate;
 
-        console.log(moment());
+        // console.log(moment());
         const createdAtMoment = moment(expense.createdAt);
         const startDateMatch = startDate ? startDate.isSameOrBefore(createdAtMoment, 'day') : true;
         const endDateMatch = endDate ? endDate.isSameOrAfter(createdAtMoment, 'day') : true; //never filter if no endDate

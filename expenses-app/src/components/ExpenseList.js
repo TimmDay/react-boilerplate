@@ -17,7 +17,7 @@ const ExpenseList = (props) => (
             ))
         }
 
-        {console.log(props)}
+        {/*{console.log(props)}*/}
     </div>
 );
 
