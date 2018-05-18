@@ -7,10 +7,15 @@ const searchReducerDefaultState = {
     isQueryCaseSensitive: true
 };
 
+
+// todo after firing, input is clear
+// todo input placeholder text is replaced with current search term
 const searchInputReducer = (state = searchReducerDefaultState, action) => {
 
     switch (action.type) {
         case 'SEARCH_FOR_TERM':
+
+            //todo get the json. isSuccess? if not success, do not add to history
 
             let remadeArr = [];
             if (state.searchHistory.includes(action.currentSearchTerm)) {
@@ -29,6 +34,9 @@ const searchInputReducer = (state = searchReducerDefaultState, action) => {
                 //slice array so only 6 terms remain (don't need to go further back than that)
                 if (remadeArr.length > 6) remadeArr = remadeArr.slice(0,6);
             }
+
+            const el = document.getElementById('primary-search-input');
+            if (el) el.value = '';
 
             return {
                 ...state,

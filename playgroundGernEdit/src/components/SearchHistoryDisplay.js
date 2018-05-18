@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { executeSearchTermInput } from '../actions/searchInput';
 
 // need to pull search history info from the store to display it
 // need to be able to re-execute previous searches if item is clicked (but using current case flag)
@@ -14,6 +15,23 @@ class SearchHistoryDisplay extends React.Component {
         super(props);
     }
 
+    handleOnClick = (buttonText) => {
+
+        // assume case irrelevant for this
+        // retrieve the text to search from the button text
+        // no validation required, it was already previously successful
+        // update placeholder in input
+
+        document.getElementById('primary-search-input').placeholder = buttonText;
+
+        this.props.dispatch(executeSearchTermInput({
+            currentSearchTerm: buttonText,
+            isQueryCaseSensitive: false
+        }));
+
+
+    };
+
     render() {
         return (
             <div>
@@ -23,6 +41,7 @@ class SearchHistoryDisplay extends React.Component {
                     <button
                         key = {item}
                         className="search-history__btn"
+                        onClick={() => this.handleOnClick(item)}
                     >{item}</button>
                 ))}
 

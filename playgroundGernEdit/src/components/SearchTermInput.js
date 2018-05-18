@@ -24,12 +24,22 @@ class SearchTermInput extends React.Component {
         this.setState((prevState) => ({ isQueryCaseSensitive: !prevState.isQueryCaseSensitive}))
     };
 
+    handleInputClear = (e) => {
+        e.preventDefault();
+        e.target.value = '';
+    };
+
     onSubmit = (e, {currentSearchTerm, isQueryCaseSensitive}=this.state) => {
         e.preventDefault();
-        // todo if successful, remove placeholder contents from input
+
+        const userEntry = document.getElementById('primary-search-input');
+        // todo on enter also, remove input contents and replace with placeholder - currently no work
+        // document.getElementById('primary-search-input').value = '';
+        userEntry.placeholder = userEntry.value;
+
 
         //validation: no digits allowed, or empty string
-        if (currentSearchTerm === '' || !!currentSearchTerm.match(/\d/)) {
+        if (userEntry.value === '' || currentSearchTerm === '' || !!currentSearchTerm.match(/\d/)) {
             this.setState(() => ({ error: 'please enter a valid word or ID'}));
         } else {
 
@@ -37,7 +47,6 @@ class SearchTermInput extends React.Component {
 
             this.setState(() => ({ error: '' }));
         }
-
     };
 
     //TODO remove tests below
@@ -47,29 +56,32 @@ class SearchTermInput extends React.Component {
                 className="search-term-form"
                 onSubmit={this.onSubmit}
             >
-                {console.log(this.state.isQueryCaseSensitive)}
-                {console.log(this.state.currentSearchTerm)}
+                {/*{console.log(this.state.isQueryCaseSensitive)}*/}
+                {/*{console.log(this.state.currentSearchTerm)}*/}
 
                 { this.state.error && <p>{this.state.error}</p> }
                 <input
+                    className="search-term-form__input"
+                    id="primary-search-input"
                     type="text"
                     placeholder="Word or ID here"
                     value={this.state.currentSearchTerm}
                     onChange={this.handleOnSearchTermChange}
                     autoFocus
+                    onClick={(e) => this.handleInputClear(e)}
                     // value={this.state.userName}
                     // onChange={this.onUserNameChange}
                 />
 
-                <div>
+                <div className="search-term-form__case-check">
                     <input
                         type="checkbox"
                         onChange={this.handleToggleCheckIgnoreCase}
                     />
-                    <label>ignore case</label>
+                    <label className="search-term-form__case-check-label">ignore case</label>
 
                     <button
-                        className=""
+                        className="search-term-form__submit"
                     > Find
                     </button>
                 </div>
