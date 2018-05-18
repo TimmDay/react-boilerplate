@@ -30,9 +30,6 @@ const searchInputReducer = (state = searchReducerDefaultState, action) => {
                 if (remadeArr.length > 6) remadeArr = remadeArr.slice(0,6);
             }
 
-
-
-
             return {
                 ...state,
                 currentSearchTerm: action.currentSearchTerm,
